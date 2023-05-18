@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background: white;
+}
+
+.cont{
+  position: relative;
+  width: 90%;
+  height: 400px;
+  padding: 20px 10px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.button{
+  display: inline-block;
+  width: 30%;
+  height: 80px;
+  margin-left: 2%;
+  margin-bottom: 15%;
+}
+
+h1{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #00aeff;
+  margin-bottom: 15px;
+}
+
+button{
+  color: #00aeff;
+}
+
+#question{
+    color: #00aeff;
+    font-size: 2.5vw;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:before{ top: 0; left: 0; }
+button:after{ top: 0; right: 0; }
+
+button:hover:before,
+button:hover:after{ width: 50%; }
+
+/* Start Main Button */
+button{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #00aeff;
+  font-size: 3vw;
+  font-weight: bold;
+  background: none;
+  border: 3px solid #00aeff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: all 0.4s linear;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next{
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  cursor: pointer;
+  color: #00aeff;
+  font-size: 3vw;
+  font-weight: bold;
+  background: none;
+  border: 3px solid #00aeff;
+  margin-bottom: 20px;
+  transition: all 0.4s linear;
+  text-align: center;
+  margin-left: 15px;
+}
+
+#response{
+  color: #00aeff;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#score{
+  color: #00aeff;
+  font-size: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover{ color: #fff; }
+
+button:before,
+button:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background: #00aeff;
+  transition: all 0.4s linear;
+}
